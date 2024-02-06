@@ -14,9 +14,8 @@ body {
     min-height: 100vh;
     font-family: var(--font);
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
-    /* background-image: url('https://bit.ly/3nFVqJh'); */
     opacity: 0;
-    animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
+    animation: 1s ease-out var(--delay) 1 transitionAnimation; 
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +63,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    padding: 10px; /* 17px */
+    padding: 10px;
     text-decoration: none;
     transition: all 900ms cubic-bezier(.08, .59, .29, .99);
     -webkit-tap-highlight-color: transparent;
@@ -104,7 +103,7 @@ body {
 }
 
 select:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; 
 }
 
 select option {
@@ -148,7 +147,6 @@ select option:hover {
 
 
 /*-------------------------popup------------------------*/
-/* credits: https://www.youtube.com/watch?v=lAS2glU0xlc */
 .overlay {
     display: flex;
     align-items: center;
@@ -169,18 +167,15 @@ select option:hover {
 .popup {
     position: relative;
     top: -43%;
-    /* right: -100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
     border-radius: 5px;
-    /* max-height: 500px; */
     width: auto;
     height: auto;
     margin: 56px;
     background-color: var(--bgColor);
-    /* transform: rotate(32deg); */
     transform: scale(0);
     transition: .5s ease-in-out;
 }
@@ -214,8 +209,6 @@ select option:hover {
 .overlay:target .popup {
     transform: scale(1);
     top: 0;
-    /* right: 0; */
-    /* transform: rotate(0); */
 }
 
 .popup-close {
@@ -251,7 +244,6 @@ select option:hover {
 
 
 /*-----------------------parallax-----------------------*/
-/* credits: https://www.youtube.com/watch?v=aywzn9cf-_U */
 #stars1 {
     width: 1px;
     height: 1px;
